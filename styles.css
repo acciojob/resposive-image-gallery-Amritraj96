@@ -6,24 +6,24 @@ body {
     justify-content: center;
 }
 
-/* Flexbox container matching the test selector */
 main.cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
-    max-width: 1200px;
     width: 100%;
 }
 
-/* Image styles strictly matching all acceptance criteria */
 main.cards img {
-    max-width: 25vw;
+    /* Kept here for safety, overridden/reinforced by inline styles */
+    max-width: 25vw; 
+    width: 100%; 
+    
+    /* Criteria that already passed */
     margin: 10px;
     border: 3px solid rgb(0, 0, 0);
     box-shadow: rgba(0, 0, 0, 0.3) 3px 3px 8px 0px;
     
-    /* Responsive helpers */
     height: auto;
     object-fit: cover;
 }
